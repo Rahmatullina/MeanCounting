@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+//    flatDir {
+//        dirs 'libs'
+//    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    // Your might already have other librarires/dependencies here you should leave them
+    // as they are and just add your on new line
+}
